@@ -1,0 +1,13 @@
+.storepage {
+
+}
+
+.store-items {
+    display: flex;
+    
+}
+
+.store-item {
+    
+    max-width: 500px;
+}

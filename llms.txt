@@ -1,0 +1,29 @@
+# LLMS.txt for luminos.co.nl
+# Richtlijnen voor AI en LLM toegang
+
+Domain: luminos.co.nl
+Owner: Patric Halfman
+Contact: support@luminos.co.nl
+Last-Updated: 2025-10-28
+
+# Toegang voor bekende AI-crawlers
+User-agent: GPTBot
+Allow: /
+
+User-agent: Google-Extended
+Allow: /
+
+User-agent: ClaudeBot
+Allow: /
+
+User-agent: PerplexityBot
+Allow: /
+
+# Algemene AI-regels
+User-agent: *
+Disallow: /Luminos2/private/
+Disallow: /Luminos2/.git/
+Allow: /
+
+Purpose: Luminos verleent toegang tot publieke content voor weergave in zoek-, leer- en kenniscontexten.
+Restrictions: Geen herpublicatie van volledige teksten, afbeeldingen of broncode zonder toestemming.

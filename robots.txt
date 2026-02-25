@@ -1,0 +1,17 @@
+# robots.txt for luminos.co.nl
+
+User-agent: *
+Allow: /
+
+# Blokkeer technische of interne directories
+Disallow: /Luminos2/.git/
+Disallow: /Luminos2/temp/
+Disallow: /Luminos2/private/
+Disallow: /Luminos2/contact.php
+Disallow: /cgi-bin/
+
+# Sitemap voor zoekmachines
+Sitemap: https://luminos.co.nl/sitemap.xml
+
+# Hoofdhost
+Host: luminos.co.nl
