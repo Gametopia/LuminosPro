@@ -11,6 +11,7 @@ require_once __DIR__ . '/../App/Helpers/auth_check.php';
 requireLogin();
 
 $user = $_SESSION['user'];
+
 ?>
 
 <title>Account - Luminos</title>

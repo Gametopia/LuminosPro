@@ -25,14 +25,16 @@ if ($currentPage === '') {
 
                     <?php if ($_SESSION['user']['role'] === 'admin'): ?>
                         <a href="/admin/dashboard" class="btn btn-primary">Admin</a>
+                    <?php elseif ($_SESSION['user']['role'] === 'customer'): ?>
+                        <a href="/account" class="btn btn-primary">Account</a>
                     <?php endif; ?>
 
-                    <a href="/logout" class="btn btn-secondary">Logout</a>
+                    <a href="/logout" class="btn btn-secondary">Uitloggen</a>
                 </div>
 
             <?php else: ?>
 
-                <a href="/login" class="btn btn-secondary">Login</a>
+                <a href="/login" class="btn btn-secondary">Inloggen</a>
 
             <?php endif; ?>
         </ul>

@@ -18,11 +18,11 @@ AuthController::register();
 
 <section class="auth-section">
   <div class="auth-card">
-    <h2>Create Your Account</h2>
+    <h2>Account Aanmaken</h2>
 
     <form method="POST" class="auth-form">
       <div class="form-row">
-        <label>Username</label>
+        <label>Gebruikersnaam</label>
         <input type="text" name="username" required>
       </div>
 
@@ -32,18 +32,18 @@ AuthController::register();
       </div>
 
       <div class="form-row">
-        <label>Password</label>
+        <label>Wachtwoord</label>
         <input type="password" name="password" required>
       </div>
 
       <button type="submit" class="btn btn-primary">
-        Register
+        Registreren
       </button>
     </form>
 
     <div class="auth-switch">
-      Already have an account?
-      <a href="/login">Login here</a>
+      Heb je al een account?
+      <a href="/login">Inloggen</a>
     </div>
   </div>
 </section>

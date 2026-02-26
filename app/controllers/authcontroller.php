@@ -12,7 +12,6 @@ class AuthController
         if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 
             if (User::findByEmail($_POST['email'])) {
-                $_SESSION['error'] = "Email already exists.";
                 header("Location: /register");
                 exit;
             }
@@ -20,7 +19,7 @@ class AuthController
             User::create(
                 $_POST['username'],
                 $_POST['email'],
-                $_POST['password'] // send raw password
+                $_POST['password']
             );
 
 
@@ -47,13 +46,13 @@ class AuthController
                 if ($user['role'] === 'admin') {
                     header("Location: admin/dashboard");
                 } else {
-                    header("Location: /dashboard");
+                    header("Location: /account");
                 }
 
                 exit;
             }
 
-            $_SESSION['error'] = "Invalid email or password.";
+            $_SESSION['error'] = "Ongeldige email of wachtwoord.";
             header("Location: /login");
             exit;
         }

@@ -23,7 +23,7 @@ AuthController::login();
 
 <section class="auth-section">
   <div class="auth-card">
-    <h2>Login to Luminos</h2>
+    <h2>Inloggen bij Luminos</h2>
 
     <form method="POST" class="auth-form">
       <div class="form-row">
@@ -32,7 +32,7 @@ AuthController::login();
       </div>
 
       <div class="form-row">
-        <label>Password</label>
+        <label>Wachtwoord</label>
         <input type="password" name="password" required>
       </div>
 
@@ -40,8 +40,8 @@ AuthController::login();
     </form>
 
     <div class="auth-switch">
-      No account yet?
-      <a href="/register">Create one</a>
+      Nog geen account?
+      <a href="/register">Registreren</a>
     </div>
   </div>
 </section>

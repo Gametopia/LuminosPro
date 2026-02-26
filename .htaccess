@@ -21,6 +21,7 @@ RewriteRule ^login/?$ public/login.php [L]
 RewriteRule ^register/?$ public/register.php [L]
 RewriteRule ^logout/?$ public/logout.php [L]
 RewriteRule ^dashboard/?$ public/dashboard.php [L]
+RewriteRule ^account/?$ public/dashboard.php [L]
 RewriteRule ^admin/dashboard/?$ public/admin/dashboard.php [L]
 
 # Alles anders → 404
