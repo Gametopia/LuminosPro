@@ -1,8 +1,6 @@
 <?php require_once __DIR__ . '/assets/head.php'; ?>
 <?php require_once __DIR__ . '/assets/header.php'; ?>
-
 <?php
-var_dump($_SESSION);
 require_once __DIR__ . '/../vendor/autoload.php';
 
 use App\Controllers\AuthController;

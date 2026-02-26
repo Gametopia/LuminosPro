@@ -1,9 +1,10 @@
+<?php require_once __DIR__ . '/assets/head.php'; ?>
+<?php require_once __DIR__ . '/assets/header.php'; ?>
+
 <head>
   <title>Foto's - Luminos</title>
 </head>
 
-<?php require_once __DIR__ . '/assets/head.php'; ?>
-<?php require_once __DIR__ . '/assets/header.php'; ?>
 
 <section class="hero">
   <div class="hero-inner">

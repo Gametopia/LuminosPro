@@ -1,0 +1,88 @@
+/* ============================= */
+/* Dashboard Layout */
+/* ============================= */
+
+.dashboard {
+    max-width: 1100px;
+    margin: auto;
+    padding: 2.5rem 1rem 4rem;
+}
+
+/* Welcome card */
+.dashboard .card {
+    background: linear-gradient(180deg, rgba(11, 18, 40, 0.85), #07102a);
+    border: 1px solid rgba(255, 255, 255, 0.04);
+    border-radius: 14px;
+    padding: 2rem;
+    box-shadow: 0 12px 34px rgba(2, 8, 30, 0.6);
+    margin-bottom: 1.75rem;
+    animation: fadeInUp 600ms ease forwards;
+}
+
+/* Dashboard grid */
+.stats-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1.25rem;
+}
+
+/* Stat cards */
+.stat-box {
+    background: linear-gradient(180deg, rgba(11, 18, 40, 0.75), #07102a);
+    border: 1px solid rgba(255, 255, 255, 0.03);
+    padding: 1.5rem;
+    border-radius: 12px;
+    box-shadow: 0 6px 20px rgba(2, 8, 30, 0.5);
+    transition: transform 240ms ease, box-shadow 240ms ease;
+}
+
+/* Hover effect */
+.stat-box:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 12px 34px rgba(2, 8, 30, 0.7);
+}
+
+/* Titles inside stats */
+.stat-title {
+    color: #b8c3ff;
+    font-size: 0.9rem;
+    margin-bottom: 0.5rem;
+}
+
+/* Stat values */
+.stat-value {
+    font-size: 1.6rem;
+    font-weight: 700;
+    color: #ffffff;
+}
+
+/* Username highlight */
+.username {
+    color: #1e5eff;
+    font-weight: 700;
+}
+
+/* Responsive dashboard grid */
+@media (max-width: 1000px) {
+    .stats-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 700px) {
+    .stats-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .dashboard {
+        padding: 1.5rem 0.8rem;
+    }
+
+    .dashboard .card {
+        padding: 1.5rem;
+    }
+
+    .stat-box {
+        padding: 1.25rem;
+    }
+}

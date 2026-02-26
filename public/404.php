@@ -1,9 +1,10 @@
+<?php require_once __DIR__ . '/assets/head.php'; ?>
+<?php require_once __DIR__ . '/assets/header.php'; ?>
+
 <head>
   <title>404 - Luminos</title>
 </head>
 
-<?php require_once __DIR__ . '/assets/head.php'; ?>
-<?php require_once __DIR__ . '/assets/header.php'; ?>
 
 <main class="error-page">
   <h1>404</h1>

@@ -42,10 +42,17 @@ class AuthController
 
                 $_SESSION['user'] = $user;
 
-                header("Location: dashboard.php");
+                $_SESSION['user'] = $user;
+
+                if ($user['role'] === 'admin') {
+                    header("Location: admin/dashboard.php");
+                } else {
+                    header("Location: dashboard.php");
+                }
+
                 exit;
-            } 
-            
+            }
+
             $_SESSION['error'] = "Invalid email or password.";
             header("Location: login.php");
             exit;
