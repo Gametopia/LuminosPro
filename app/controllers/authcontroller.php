@@ -44,10 +44,4 @@ class AuthController {
             die("Invalid login.");
         }
     }
-
-    public static function logout() {
-        session_destroy();
-        header("Location: index.php");
-        exit;
-    }
 }

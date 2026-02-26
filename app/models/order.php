@@ -3,13 +3,10 @@
 namespace App\Models;
 
 use App\Config\Database;
-use PDO;
 
-class Order
-{
+class Order {
 
-    public static function create($userId, $total)
-    {
+    public static function create($userId, $total) {
 
         $db = Database::connect();
 
@@ -17,7 +14,7 @@ class Order
             "INSERT INTO orders (user_id,total) VALUES (?,?)"
         );
 
-        $stmt->execute([$userId, $total]);
+        $stmt->execute([$userId,$total]);
 
         return $db->lastInsertId();
     }

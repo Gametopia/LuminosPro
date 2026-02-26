@@ -1,7 +1,8 @@
 {
+  "name": "luminos/store",
   "autoload": {
     "psr-4": {
-      "Luminos\\": "app/"
+      "App\\": "app/"
     }
   }
 }

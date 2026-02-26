@@ -5,11 +5,9 @@ namespace App\Models;
 use App\Config\Database;
 use PDO;
 
-class User
-{
+class User {
 
-    public static function create($username, $email, $password)
-    {
+    public static function create($username, $email, $password) {
 
         $db = Database::connect();
 
@@ -24,8 +22,7 @@ class User
         ]);
     }
 
-    public static function findByEmail($email)
-    {
+    public static function findByEmail($email) {
 
         $db = Database::connect();
 

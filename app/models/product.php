@@ -26,9 +26,10 @@ class Product {
 
     public static function create($data) {
 
-        $stmt = Database::connect()
-            ->prepare("INSERT INTO products (name,description,price,image,stock)
-                       VALUES (?,?,?,?,?)");
+        $stmt = Database::connect()->prepare(
+            "INSERT INTO products (name,description,price,image,stock)
+             VALUES (?,?,?,?,?)"
+        );
 
         return $stmt->execute([
             $data['name'],
