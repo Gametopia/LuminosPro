@@ -4,9 +4,11 @@ namespace App\Controllers;
 
 use App\Models\Product;
 
-class AdminController {
+class AdminController
+{
 
-    public static function createProduct() {
+    public static function createProduct()
+    {
 
         if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 

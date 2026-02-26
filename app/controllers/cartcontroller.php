@@ -2,9 +2,11 @@
 
 namespace App\Controllers;
 
-class CartController {
+class CartController
+{
 
-    public static function add($productId) {
+    public static function add($productId)
+    {
 
         if (!isset($_SESSION['cart'])) {
             $_SESSION['cart'] = [];
@@ -14,7 +16,8 @@ class CartController {
             ($_SESSION['cart'][$productId] ?? 0) + 1;
     }
 
-    public static function clear() {
+    public static function clear()
+    {
         unset($_SESSION['cart']);
     }
 }

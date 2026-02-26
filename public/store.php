@@ -6,15 +6,15 @@
 <?php require_once __DIR__ . '/assets/header.php'; ?>
 
 <main>
-<?php
-session_start();
+  <?php
+  
 
-require __DIR__ . '/../vendor/autoload.php';
+  require __DIR__ . '/../vendor/autoload.php';
 
-use App\Models\Product;
+  use App\Models\Product;
 
-$products = Product::all();
-?>
+  $products = Product::all();
+  ?>
 
   <?php foreach ($products as $product): ?>
     <div>

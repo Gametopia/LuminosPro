@@ -17,7 +17,7 @@
         </div>
       </div>
       <div class="hero-media">
-        <img src="img/lmns_round.svg" alt="Luminos Logo">
+        <img src="assets/img/lmns_round.svg" alt="Luminos Logo">
       </div>
 
     </div>

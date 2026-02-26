@@ -1,33 +1,32 @@
 <?php require_once __DIR__ . '/assets/head.php'; ?>
 <?php require_once __DIR__ . '/assets/header.php'; ?>
-
 <?php
 var_dump($_SESSION);
 require_once __DIR__ . '/../vendor/autoload.php';
 
 use App\Controllers\AuthController;
 
-AuthController::login();
+AuthController::register();
+
+
 ?>
 
-<?php if (!empty($_SESSION['error'])): ?>
-  <div style="color:#ff6b6b; margin:1rem 0; text-align:center;">
-    <?= $_SESSION['error']; unset($_SESSION['error']); ?>
-  </div>
-<?php endif; ?>
+
 
 <head>
-  <title>Inloggen - Luminos</title>
+  <title>Registreren - Luminos</title>
 </head>
-
-
-
 
 <section class="auth-section">
   <div class="auth-card">
-    <h2>Login to Luminos</h2>
+    <h2>Create Your Account</h2>
 
     <form method="POST" class="auth-form">
+      <div class="form-row">
+        <label>Username</label>
+        <input type="text" name="username" required>
+      </div>
+
       <div class="form-row">
         <label>Email</label>
         <input type="email" name="email" required>
@@ -38,12 +37,14 @@ AuthController::login();
         <input type="password" name="password" required>
       </div>
 
-      <button type="submit" class="btn btn-primary">Login</button>
+      <button type="submit" class="btn btn-primary">
+        Register
+      </button>
     </form>
 
     <div class="auth-switch">
-      No account yet?
-      <a href="register.php">Create one</a>
+      Already have an account?
+      <a href="login.php">Login here</a>
     </div>
   </div>
 </section>
