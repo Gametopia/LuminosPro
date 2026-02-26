@@ -16,7 +16,7 @@
         reageren zo snel mogelijk.</p>
     </div>
     <div class="hero-media">
-      <img src="assets/img/lmns_round.svg" alt="Contact Luminos">
+      <img src="/public/assets/img/lmns_round.svg" alt="Contact Luminos">
     </div>
   </div>
 </section>

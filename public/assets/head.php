@@ -9,7 +9,7 @@ require_once __DIR__ . '/../../src/helpers.php';
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="icon" type="x-icon" href="assets/img/lmns_round.svg">
+    <link rel="icon" type="x-icon" href="/public/assets/img/lmns_round.svg">
 
     <script type="text/javascript">
         var _iub = _iub || [];
@@ -31,8 +31,8 @@ require_once __DIR__ . '/../../src/helpers.php';
     <link rel="canonical" href="https://luminos.co.nl<?= $_SERVER['REQUEST_URI']; ?>">
     <meta name="description"
         content="Luminos is hét scooter tuning bedrijf in Rotterdam. Meer vermogen, betere prestaties en een unieke look voor jouw scooter. Snel, betrouwbaar en professioneel.">
-    <link rel="stylesheet" href="assets/css/styles.css">
-    <link rel="stylesheet" href="assets/css/storefront.css">
+    <link rel="stylesheet" href="/public/assets/css/styles.css">
+    <link rel="stylesheet" href="/public/assets/css/storefront.css">
     <link href='https://fonts.googleapis.com/css?family=DM Sans' rel='stylesheet'>
     <script src="https://kit.fontawesome.com/2481caf917.js" crossorigin="anonymous" defer></script>
 </head>
@@ -50,5 +50,5 @@ require_once __DIR__ . '/../../src/helpers.php';
         <meta itemprop="address" content="Rotterdam, Netherlands">
         <meta itemprop="url" content="https://luminos.co.nl">
     </div>
-    <script src="assets/js/menu.js"></script>
-    <script src="assets/js/gallery.js" defer></script>
+    <script src="/public/assets/js/menu.js"></script>
+    <script src="/public/assets/js/gallery.js" defer></script>

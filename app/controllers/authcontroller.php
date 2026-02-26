@@ -13,7 +13,7 @@ class AuthController
 
             if (User::findByEmail($_POST['email'])) {
                 $_SESSION['error'] = "Email already exists.";
-                header("Location: register.php");
+                header("Location: /register");
                 exit;
             }
 
@@ -24,7 +24,7 @@ class AuthController
             );
 
 
-            header("Location: login.php");
+            header("Location: /login");
             exit;
         }
     }
@@ -45,16 +45,16 @@ class AuthController
                 $_SESSION['user'] = $user;
 
                 if ($user['role'] === 'admin') {
-                    header("Location: admin/dashboard.php");
+                    header("Location: admin/dashboard");
                 } else {
-                    header("Location: dashboard.php");
+                    header("Location: /dashboard");
                 }
 
                 exit;
             }
 
             $_SESSION['error'] = "Invalid email or password.";
-            header("Location: login.php");
+            header("Location: /login");
             exit;
         }
     }

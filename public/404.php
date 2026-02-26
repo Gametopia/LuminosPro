@@ -1,5 +1,5 @@
-<?php require_once __DIR__ . '/assets/head.php'; ?>
-<?php require_once __DIR__ . '/assets/header.php'; ?>
+<?php require_once __DIR__ . '/public/assets/head.php'; ?>
+<?php require_once __DIR__ . '/public/assets/header.php'; ?>
 
 <head>
   <title>404 - Luminos</title>
@@ -15,7 +15,7 @@
   </div>
 </main>
 
-<?php require_once __DIR__ . '/assets/footer.php'; ?>
+<?php require_once __DIR__ . '/public/assets/footer.php'; ?>
 
 </body>
 

@@ -41,7 +41,7 @@ AuthController::login();
 
     <div class="auth-switch">
       No account yet?
-      <a href="register.php">Create one</a>
+      <a href="/register">Create one</a>
     </div>
   </div>
 </section>

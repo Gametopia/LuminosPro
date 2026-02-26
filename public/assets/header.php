@@ -11,7 +11,7 @@ if ($currentPage === '') {
 
 <header>
     <div class="navbar" id="main-navbar">
-        <div class="logo"><img src="assets/img/lmns_short_star2.svg" alt="Luminos Logo"></div>
+        <div class="logo"><img src="/public/assets/img/lmns_short_star2.svg" alt="Luminos Logo"></div>
         <ul class="nav-links">
             <li><a href="/" class="<?= $currentPage === 'home' ? 'active' : '' ?>">Home</a></li>
             <li><a href="/about" class="<?= $currentPage === 'about' ? 'active' : '' ?>">Over Ons</a></li>
@@ -21,18 +21,18 @@ if ($currentPage === '') {
             <?php if (!empty($_SESSION['user'])): ?>
 
                 <div class="nav-user">
-                    <span>Hi, <?= htmlspecialchars($_SESSION['user']['username']); ?></span>
+                    <br>
 
                     <?php if ($_SESSION['user']['role'] === 'admin'): ?>
-                        <a href="admin/dashboard.php" class="btn btn-primary">Admin</a>
+                        <a href="/admin/dashboard" class="btn btn-primary">Admin</a>
                     <?php endif; ?>
 
-                    <a href="logout.php" class="btn btn-secondary">Logout</a>
+                    <a href="/logout" class="btn btn-secondary">Logout</a>
                 </div>
 
             <?php else: ?>
 
-                <a href="login.php" class="btn btn-secondary">Login</a>
+                <a href="/login" class="btn btn-secondary">Login</a>
 
             <?php endif; ?>
         </ul>

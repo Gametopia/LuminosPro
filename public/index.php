@@ -21,7 +21,7 @@
         </div>
       </div>
       <div class="hero-media">
-        <img src="assets/img/lmns_round.svg" alt="Luminos Logo">
+        <img src="/public/assets/img/lmns_round.svg" alt="Luminos Logo">
       </div>
     </div>
   </section>
@@ -29,7 +29,7 @@
   <section class="hero-secondary" id="hero-secondary">
     <div class="hero-inner">
       <div class="hero-media">
-        <img src="assets/img/lmns_short_star2.svg" alt="Luminos Logo">
+        <img src="/public/assets/img/lmns_short_star2.svg" alt="Luminos Logo">
       </div>
       <div class="hero-copy">
         <h2>Waarom kiezen voor Luminos?</h2>

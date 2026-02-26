@@ -4,7 +4,7 @@
 function requireLogin()
 {
     if (!isset($_SESSION['user'])) {
-        header("Location: login.php");
+        header("Location: /login");
         exit;
     }
 }
@@ -12,7 +12,7 @@ function requireLogin()
 function requireAdmin()
 {
     if (!isset($_SESSION['user']) || $_SESSION['user']['role'] !== 'admin') {
-        header("Location: login.php");
+        header("Location: /login");
         exit;
     }
 }

@@ -3,7 +3,7 @@
 
 <head>
   <title>Account - Luminos</title>
-  <link rel="stylesheet" href="assets/css/dashboard.css">
+  <link rel="stylesheet" href="/public/assets/css/dashboard.css">
 </head>
 
 <?php

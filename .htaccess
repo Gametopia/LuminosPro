@@ -2,24 +2,29 @@
 RewriteEngine on
 
 # Als bestand of map echt bestaat (css, js, img, 404.html) → gewoon laden
-RewriteCond %{REQUEST_FILENAME} -f [OR]
-RewriteCond %{REQUEST_FILENAME} -d
-RewriteRule ^ - [L]
+#RewriteCond %{REQUEST_FILENAME} -f [OR]
+#RewriteCond %{REQUEST_FILENAME} -d
+#RewriteRule ^ - [L]
 
 # Root (/) → home.html
-RewriteRule ^$ /public/index.php [L]
+RewriteRule ^$ public/index.php [L]
 
 # /home → home.html
-# RewriteRule ^home/?$ index.php [L]
+ RewriteRule ^home/?$ public/index.php [L]
 
 # Toegestane pagina's → map naar .html bestanden
-RewriteRule ^about/?$ /public/about.php [L]
-RewriteRule ^contact/?$ /public/contact.php [L]
-RewriteRule ^pricing/?$ /public/pricing.php [L]
-RewriteRule ^photos/?$ /public/photos.php [L]
+RewriteRule ^about/?$ public/about.php [L]
+RewriteRule ^contact/?$ public/contact.php [L]
+RewriteRule ^pricing/?$ public/pricing.php [L]
+RewriteRule ^photos/?$ public/photos.php [L]
+RewriteRule ^login/?$ public/login.php [L]
+RewriteRule ^register/?$ public/register.php [L]
+RewriteRule ^logout/?$ public/logout.php [L]
+RewriteRule ^dashboard/?$ public/dashboard.php [L]
+RewriteRule ^admin/dashboard/?$ public/admin/dashboard.php [L]
 
 # Alles anders → 404
 #RewriteRule ^.*$ - [R=404,L]
 
 # Custom 404 pagina
-ErrorDocument 404 /public/404.php
+#ErrorDocument 404 public/404.php

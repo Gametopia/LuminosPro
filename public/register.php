@@ -43,7 +43,7 @@ AuthController::register();
 
     <div class="auth-switch">
       Already have an account?
-      <a href="login.php">Login here</a>
+      <a href="/login">Login here</a>
     </div>
   </div>
 </section>

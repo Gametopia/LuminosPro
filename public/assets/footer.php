@@ -1,7 +1,7 @@
 <footer>
     <div class="footer-top">
         <div class="footer-left">
-            <a class="footer-logo" href="/"><img src="assets/img/lmns_short_star2.svg" alt="Luminos logo"></a>
+            <a class="footer-logo" href="/"><img src="/public/assets/img/lmns_short_star2.svg" alt="Luminos logo"></a>
             <p class="footer-desc">Luminos — specialist in scooter tuning en onderhoud. Afspraak nodig? Bel of mail ons, of
                 maak direct een afspraak online.</p>
             <p class="footer-desc">KvK nummer: 99741245</p>
