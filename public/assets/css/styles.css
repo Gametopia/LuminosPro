@@ -70,11 +70,10 @@ body {
     display: none;
     /* standaard verborgen */
     flex-direction: column;
-    width: 100%;
     background: #050a1f;
     position: absolute;
-    top: 80px;
-    left: 0;
+    top: 60px;
+    right: 0;
     box-shadow: 0 6px 18px rgba(2, 8, 30, 0.6);
     margin: auto;
   }
@@ -1170,3 +1169,47 @@ blockquote span {
   align-items: center;
   gap: 1rem;
 }
+
+.store-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 1.25rem;
+}
+
+.store-card {
+  background: linear-gradient(180deg, rgba(11, 18, 40, 0.8), #07102a);
+  border: 1px solid rgba(255, 255, 255, 0.03);
+  padding: 1rem;
+  border-radius: 10px;
+  text-align: center;
+
+  img {
+  width: 50px;
+  
+  object-fit: cover;
+  border-radius: 8px;
+  background: #000;
+}
+}
+
+.store-card h3 {
+  margin: 0.75rem 0 0.25rem;
+}
+
+.store-card p {
+  color: #c0c9ff;
+  margin-bottom: 0.75rem;
+}
+
+.store-card .price {
+  font-weight: 700;
+  color: #1e5eff;
+  font-size: 1.05rem;
+}
+
+@media screen and (max-width: 600px) {
+  .store-grid {
+    grid-template-columns: 1fr;
+  }
+}
+

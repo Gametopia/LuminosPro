@@ -16,7 +16,7 @@ if ($currentPage === '') {
             <li><a href="/" class="<?= $currentPage === 'home' ? 'active' : '' ?>">Home</a></li>
             <li><a href="/about" class="<?= $currentPage === 'about' ? 'active' : '' ?>">Over Ons</a></li>
             <li><a href="/pricing" class="<?= $currentPage === 'pricing' ? 'active' : '' ?>">Tarieven</a></li>
-            <li><a href="/photos" class="<?= $currentPage === 'photos' ? 'active' : '' ?>">Foto's</a></li>
+            <li><a href="/store" class="<?= $currentPage === 'store' ? 'active' : '' ?>">Winkel</a></li>
             <li><a href="/contact" class="<?= $currentPage === 'contact' ? 'active' : '' ?>">Contact</a></li>
             <?php if (!empty($_SESSION['user'])): ?>
 
