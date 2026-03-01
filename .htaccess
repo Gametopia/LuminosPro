@@ -22,6 +22,8 @@ RewriteRule ^register/?$ public/register.php [L]
 RewriteRule ^logout/?$ public/logout.php [L]
 RewriteRule ^dashboard/?$ public/dashboard.php [L]
 RewriteRule ^account/?$ public/dashboard.php [L]
+RewriteRule ^store/?$ public/store.php [L]
+RewriteRule ^cart/?$ public/cart.php [L]
 RewriteRule ^admin/dashboard/?$ public/admin/dashboard.php [L]
 
 # Alles anders → 404
