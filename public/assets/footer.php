@@ -40,7 +40,7 @@
     </div>
 
     <div class="footer-bottom">
-        <div class="legal">© 2025 Luminos. Alle rechten voorbehouden.</div>
+        <div class="legal">© 2026 Luminos. Alle rechten voorbehouden.</div>
     </div>
 </footer>
 
